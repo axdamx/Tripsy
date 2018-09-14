@@ -13,6 +13,7 @@
 		8170F45F214B49F100B869F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8170F45D214B49F100B869F9 /* LaunchScreen.storyboard */; };
 		8170F469214B4A1600B869F9 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170F468214B4A1600B869F9 /* TripModel.swift */; };
 		8170F46B214B4A1E00B869F9 /* TripFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170F46A214B4A1E00B869F9 /* TripFunction.swift */; };
+		8170F46D214B4E4600B869F9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170F46C214B4E4600B869F9 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8170F460214B49F100B869F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8170F468214B4A1600B869F9 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		8170F46A214B4A1E00B869F9 /* TripFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunction.swift; sourceTree = "<group>"; };
+		8170F46C214B4E4600B869F9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		8170F466214B4A0500B869F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8170F46C214B4E4600B869F9 /* Data.swift */,
 				8170F467214B4A0A00B869F9 /* Trip */,
 			);
 			path = Model;
@@ -157,6 +160,7 @@
 				8170F469214B4A1600B869F9 /* TripModel.swift in Sources */,
 				8170F46B214B4A1E00B869F9 /* TripFunction.swift in Sources */,
 				8170F455214B49EF00B869F9 /* AppDelegate.swift in Sources */,
+				8170F46D214B4E4600B869F9 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
