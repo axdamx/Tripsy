@@ -21,10 +21,10 @@ class TripFunction {
                 Data.tripModels.append(TripModel(title: "Mexico"))
                 Data.tripModels.append(TripModel(title: "Russia Trip"))
             }
-        }
-      
-        DispatchQueue.main.async {
-            completion()
+            
+            DispatchQueue.main.async {
+                completion()
+            }
         }
     }
     
