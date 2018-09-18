@@ -16,10 +16,10 @@ class MainTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        mainView.layer.shadowOpacity = 1
-        mainView.layer.shadowOffset = CGSize.zero
-        mainView.layer.shadowColor = UIColor.darkGray.cgColor
-        mainView.layer.cornerRadius = 10
+        mainView.customView()
+        mainLabel.font = UIFont(name: Theme.mainFontName, size: 32)
+        mainView.backgroundColor = Theme.accent
+      
     }
     
     func setup(tripModel: TripModel) {

@@ -21,7 +21,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bXp-gT-pGv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="lID-iF-5kN" customClass="MainTableCell" customModule="Tripsy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
@@ -46,6 +46,7 @@
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="mainLabel" destination="ZHW-yj-Jr6" id="c5B-eG-pTE"/>
                                             <outlet property="mainView" destination="8fo-KB-MAe" id="kdp-F6-1Ma"/>
@@ -53,11 +54,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB1-s5-B0M" customClass="FloatingActionButton" customModule="Tripsy" customModuleProvider="target">
+                                <rect key="frame" x="301" y="592" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="icons8-add_filled"/>
+                                <connections>
+                                    <segue destination="iIP-Lz-TCP" kind="presentation" id="kgd-ys-E5E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Oju-qC-jRW"/>
                     </view>
                     <connections>
+                        <outlet property="addBtn" destination="AB1-s5-B0M" id="2C7-ns-bef"/>
                         <outlet property="tableView" destination="bXp-gT-pGv" id="lXZ-1A-omN"/>
                     </connections>
                 </viewController>
@@ -65,5 +75,16 @@
             </objects>
             <point key="canvasLocation" x="208.80000000000001" y="142.57871064467767"/>
         </scene>
+        <!--AddTripsyVC-->
+        <scene sceneID="Kyi-Wm-u83">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTripsyVC" id="iIP-Lz-TCP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IX-96-iss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="143"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icons8-add_filled" width="25" height="25"/>
+    </resources>
 </document>

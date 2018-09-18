@@ -16,6 +16,16 @@
 		8170F471214B51A400B869F9 /* TripsyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8170F470214B51A400B869F9 /* TripsyVC.storyboard */; };
 		8170F473214B51B700B869F9 /* TripsyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170F472214B51B700B869F9 /* TripsyVC.swift */; };
 		8170F475214B5E1900B869F9 /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170F474214B5E1900B869F9 /* MainTableCell.swift */; };
+		81EAF43A2150931A00AE681D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF4392150931A00AE681D /* UIViewExtension.swift */; };
+		81EAF43E2150945700AE681D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF43D2150945700AE681D /* Theme.swift */; };
+		81EAF4402150950E00AE681D /* Comic Sans MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81EAF43F2150950E00AE681D /* Comic Sans MS.ttf */; };
+		81EAF4422150968E00AE681D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EAF4412150968E00AE681D /* Colors.xcassets */; };
+		81EAF444215099B500AE681D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF443215099B500AE681D /* UIButtonExtension.swift */; };
+		81EAF44621509AB700AE681D /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF44521509AB700AE681D /* FloatingActionButton.swift */; };
+		81EAF44821509DAD00AE681D /* AddTripsyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EAF44721509DAD00AE681D /* AddTripsyVC.storyboard */; };
+		81EAF44B21509DF100AE681D /* AddTripsy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF44A21509DF100AE681D /* AddTripsy.swift */; };
+		81EAF44E2150A13A00AE681D /* popUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF44D2150A13A00AE681D /* popUpView.swift */; };
+		81EAF4502150A26000AE681D /* popUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EAF44F2150A26000AE681D /* popUpButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,16 @@
 		8170F470214B51A400B869F9 /* TripsyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsyVC.storyboard; sourceTree = "<group>"; };
 		8170F472214B51B700B869F9 /* TripsyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsyVC.swift; sourceTree = "<group>"; };
 		8170F474214B5E1900B869F9 /* MainTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCell.swift; sourceTree = "<group>"; };
+		81EAF4392150931A00AE681D /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		81EAF43D2150945700AE681D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		81EAF43F2150950E00AE681D /* Comic Sans MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS.ttf"; sourceTree = "<group>"; };
+		81EAF4412150968E00AE681D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		81EAF443215099B500AE681D /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		81EAF44521509AB700AE681D /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		81EAF44721509DAD00AE681D /* AddTripsyVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripsyVC.storyboard; sourceTree = "<group>"; };
+		81EAF44A21509DF100AE681D /* AddTripsy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripsy.swift; sourceTree = "<group>"; };
+		81EAF44D2150A13A00AE681D /* popUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpView.swift; sourceTree = "<group>"; };
+		81EAF44F2150A26000AE681D /* popUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +82,9 @@
 		8170F453214B49EF00B869F9 /* Tripsy */ = {
 			isa = PBXGroup;
 			children = (
+				81EAF44C2150A12000AE681D /* CustomControls */,
+				81EAF43C2150944D00AE681D /* Resources */,
+				81EAF43B2150932200AE681D /* Extensions */,
 				8170F466214B4A0500B869F9 /* Model */,
 				8170F46E214B517A00B869F9 /* View */,
 				8170F454214B49EF00B869F9 /* AppDelegate.swift */,
@@ -93,6 +116,7 @@
 		8170F46E214B517A00B869F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81EAF44921509DC800AE681D /* AddTripsy */,
 				8170F46F214B518C00B869F9 /* TripsyVC */,
 			);
 			path = View;
@@ -106,6 +130,44 @@
 				8170F474214B5E1900B869F9 /* MainTableCell.swift */,
 			);
 			path = TripsyVC;
+			sourceTree = "<group>";
+		};
+		81EAF43B2150932200AE681D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81EAF4392150931A00AE681D /* UIViewExtension.swift */,
+				81EAF443215099B500AE681D /* UIButtonExtension.swift */,
+				81EAF44521509AB700AE681D /* FloatingActionButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81EAF43C2150944D00AE681D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81EAF43F2150950E00AE681D /* Comic Sans MS.ttf */,
+				81EAF43D2150945700AE681D /* Theme.swift */,
+				81EAF4412150968E00AE681D /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81EAF44921509DC800AE681D /* AddTripsy */ = {
+			isa = PBXGroup;
+			children = (
+				81EAF44721509DAD00AE681D /* AddTripsyVC.storyboard */,
+				81EAF44A21509DF100AE681D /* AddTripsy.swift */,
+			);
+			path = AddTripsy;
+			sourceTree = "<group>";
+		};
+		81EAF44C2150A12000AE681D /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				81EAF44D2150A13A00AE681D /* popUpView.swift */,
+				81EAF44F2150A26000AE681D /* popUpButton.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EAF4422150968E00AE681D /* Colors.xcassets in Resources */,
 				8170F45F214B49F100B869F9 /* LaunchScreen.storyboard in Resources */,
+				81EAF44821509DAD00AE681D /* AddTripsyVC.storyboard in Resources */,
+				81EAF4402150950E00AE681D /* Comic Sans MS.ttf in Resources */,
 				8170F45C214B49F100B869F9 /* Assets.xcassets in Resources */,
 				8170F471214B51A400B869F9 /* TripsyVC.storyboard in Resources */,
 			);
@@ -179,10 +244,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EAF44B21509DF100AE681D /* AddTripsy.swift in Sources */,
+				81EAF44E2150A13A00AE681D /* popUpView.swift in Sources */,
 				8170F469214B4A1600B869F9 /* TripModel.swift in Sources */,
+				81EAF4502150A26000AE681D /* popUpButton.swift in Sources */,
+				81EAF43E2150945700AE681D /* Theme.swift in Sources */,
 				8170F46B214B4A1E00B869F9 /* TripFunction.swift in Sources */,
 				8170F455214B49EF00B869F9 /* AppDelegate.swift in Sources */,
 				8170F475214B5E1900B869F9 /* MainTableCell.swift in Sources */,
+				81EAF444215099B500AE681D /* UIButtonExtension.swift in Sources */,
+				81EAF43A2150931A00AE681D /* UIViewExtension.swift in Sources */,
+				81EAF44621509AB700AE681D /* FloatingActionButton.swift in Sources */,
 				8170F46D214B4E4600B869F9 /* Data.swift in Sources */,
 				8170F473214B51B700B869F9 /* TripsyVC.swift in Sources */,
 			);

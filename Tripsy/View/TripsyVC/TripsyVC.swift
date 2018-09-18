@@ -11,6 +11,7 @@ import UIKit
 class TripsyVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addBtn: FloatingActionButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class TripsyVC: UIViewController {
         TripFunction.readTrip(completion:  {
             self.tableView.reloadData()
         })
+        
+        view.backgroundColor = Theme.background
+//        addBtn.customButton()
     }
 
 }
