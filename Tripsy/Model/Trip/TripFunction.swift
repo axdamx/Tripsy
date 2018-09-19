@@ -11,7 +11,7 @@ import Foundation
 class TripFunction {
     
     static func createTrip(tripModel: TripModel) {
-        
+        Data.tripModels.append(tripModel)
     }
     
     static func readTrip (completion: @escaping () -> ()) {
@@ -33,8 +33,7 @@ class TripFunction {
         
     }
     
-    static func deleteTrip(tripModel: TripModel) {
-        
-        
+    static func deleteTrip(index: Int) {
+        Data.tripModels.remove(at: index)
     }
 }

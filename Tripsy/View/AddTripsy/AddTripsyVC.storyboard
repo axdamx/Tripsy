@@ -22,6 +22,10 @@
                                 <rect key="frame" x="16" y="47" width="343" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81H-lu-j7z">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="198"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nja-ai-LR8">
                                         <rect key="frame" x="8" y="8" width="327" height="29"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -52,6 +56,14 @@
                                             <action selector="saveTapped:" destination="APq-wI-ceU" eventType="touchUpInside" id="tvX-k4-Mdp"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUv-fx-vqc">
+                                        <rect key="frame" x="300" y="11" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icons8-camera"/>
+                                        <connections>
+                                            <action selector="cameraTapped:" destination="APq-wI-ceU" eventType="touchUpInside" id="j7k-sr-pxa"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -61,7 +73,9 @@
                     </view>
                     <connections>
                         <outlet property="addTripTextField" destination="yG4-zT-vvk" id="2Vi-XT-hs7"/>
+                        <outlet property="cameraBtn" destination="mUv-fx-vqc" id="9M4-Be-8uR"/>
                         <outlet property="cancelBtn" destination="D3w-9Z-3Ec" id="UVK-S9-LUK"/>
+                        <outlet property="imageView" destination="81H-lu-j7z" id="9ah-DH-yFN"/>
                         <outlet property="saveBtn" destination="1XJ-hS-bvf" id="wtl-dR-xnv"/>
                         <outlet property="titleLabel" destination="nja-ai-LR8" id="hV8-Vh-7dD"/>
                     </connections>
@@ -71,4 +85,7 @@
             <point key="canvasLocation" x="1068" y="142.57871064467767"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-camera" width="25" height="25"/>
+    </resources>
 </document>

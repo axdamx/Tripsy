@@ -12,6 +12,7 @@ class MainTableCell: UITableViewCell {
 
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var mainImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,11 +20,13 @@ class MainTableCell: UITableViewCell {
         mainView.customView()
         mainLabel.font = UIFont(name: Theme.mainFontName, size: 32)
         mainView.backgroundColor = Theme.accent
+        mainImageView.layer.cornerRadius = mainView.layer.cornerRadius
       
     }
     
     func setup(tripModel: TripModel) {
-        self.mainLabel?.text = tripModel.title
+        mainLabel.text = tripModel.title
+        mainImageView.image = tripModel.image
     }
 
 }
